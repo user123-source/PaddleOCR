@@ -104,7 +104,7 @@ class TextSystem(object):
                 filter_rec_res.append(rec_result)
         end = time.time()
         time_dict['all'] = end - start
-        return filter_boxes, filter_rec_res, time_dict
+        return filter_boxes, filter_rec_res, time_dict, angle_list
 
 
 def sorted_boxes(dt_boxes):
